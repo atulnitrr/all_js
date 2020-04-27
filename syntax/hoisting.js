@@ -1,7 +1,25 @@
 // "use strict";
 console.log("hoisting");
+
+let name = "atul";
+let age = "27";
+let ageField = "age";
+let obj = {
+  name,
+  [ageField]: 34,
+  greet() {
+    console.log(this.name + "  " + this.age);
+  },
+};
+
+console.log(obj.age);
+console.log(obj);
+
+const comp = (numb1, bum2 = 0) => numb1 === bum2;
+
 // fat arrow function
 
+/*
 const person = {
   name: "atul",
   sayMyName() {
@@ -19,6 +37,8 @@ say.apply(person);
 // person.sayFatArrwo();
 
 setTimeout(() => console.log("Hello"), 2000);
+
+*/
 
 /*
 
