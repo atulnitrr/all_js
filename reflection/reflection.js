@@ -6,8 +6,17 @@ class Person {
     this.age = age;
   }
 }
-
 let person = new Person("atul", 23);
+console.log(Reflect.isExtensible(person));
+Reflect.preventExtensions(person);
+console.log(Reflect.isExtensible(person));
+Reflect.defineProperty(person, "hobbies", {
+  writable: true,
+  value: ["sport"],
+});
+
+Reflect.deleteProperty(person, "age");
+console.log(person);
 console.log(Reflect.ownKeys(person));
 
 /*
