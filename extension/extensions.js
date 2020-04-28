@@ -1,9 +1,66 @@
 console.log("Hello in extension");
 
+// array
+
+let array = [1, 2, 3];
+let it = array.entries();
+for (const iterator of it) {
+  console.log(iterator);
+}
+// console.log(array.copyWithin(1, 2));
+// console.log(array);
+
+/*
+var inveerntory = [
+  { name: "apples", quantity: 10 },
+  { name: "banana", quantity: 5 },
+  { name: "cherries", quantity: 10 },
+];
+
+function findCherry(fruit) {
+  return fruit.name === "cherries";
+}
+
+console.log(inveerntory.find(findCherry));
+
+*/
+
+/*
+let array = Array(5);
+array = Array.of(9, 90, 33);
+array = [10, 1, 2, 34];
+console.log(array);
+
+console.log(array.find((val) => val >= 2));
+*/
+
+// array.fill(100, 0, 2);
+// console.log(array);
+
+// let newArray = Array.from(array, (val) => val * 2);
+// console.log(newArray);
+
+/*
+let number = NaN;
+console.log(isNaN(number));
+console.log(Number.isNaN(number));
+
+*/
+
+/*
+let name = "atul";
+console.log(name.startsWith("at"));
+console.log(name.endsWith("ul"));
+console.log(name.includes("tu"));
+console.log(name);
+
+*/
+/*
 let number = 3.34;
 number = 0.34;
 number = -3.34;
 console.log(Math.trunc(number));
+*/
 
 /*
 let number = 20;
