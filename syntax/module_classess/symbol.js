@@ -2,6 +2,7 @@ console.log("Symbol js");
 
 let numbers = [1, 2, 3];
 
+console.log(numbers[Symbol.toPrimitive]);
 numbers[Symbol.toPrimitive] = function () {
   return 999;
 };
