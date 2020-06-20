@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom traversal</title>
+  </head>
+  <body>
+    <div id="output">DOM (Document Object Model)</div>
+    <h1>What is the DOM???</h1>
+    <p class="yellow">
+      Treats an HTML, XHTML, or XML document as a tree structure wherein each
+      node is an object representing a part of the document.
+    </p>
+    <ul>
+      <li class="yellow">Describes how all the HTML elements are related</li>
+      <li>
+        Allows JavaScript to call into the DOM select elements and influcence
+        elements
+      </li>
+      <li>DOM is created when the web page loads</li>
+      <li>Elements within the page can be accessed and changed</li>
+    </ul>
+    <p>
+      <input type="text" id="input" />
+    </p>
+    <p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5a/DOM-model.svg"
+      />
+    </p>
+    <div class="yellow">Heello WOrld</div>
+    <script>
+      const ulItem = document.getElementsByTagName("ul")[0];
+      console.dir(ulItem);
+    </script>
+  </body>
+</html>
