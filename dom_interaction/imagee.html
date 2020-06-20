@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+  </head>
+  <body>
+    <p>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/5a/DOM-model.svg"
+        width="100px"
+      />
+    </p>
+
+    <script>
+      const imageList = document.getElementsByTagName("img");
+      console.log(imageList);
+      for (let index = 0; index < imageList.length; index++) {
+        const element = imageList[index];
+        element.addEventListener("click", () => {
+          window.open(element.src);
+        });
+      }
+    </script>
+  </body>
+</html>
