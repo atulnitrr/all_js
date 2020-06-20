@@ -31,9 +31,15 @@
     </p>
     <div class="">Heello WOrld</div>
     <script>
-      var output = document.getElementById("output");
-      console.dir(output);
-      output.innerText = "Hello Text Hellop WOrld";
+      const listItems = document.getElementsByTagName("li");
+
+      for (let i = 0; i < listItems.length; i++) {
+        const element = listItems[i];
+        element.innerText = `Item ${i + 1}`;
+      }
+      // var output = document.getElementById("output");
+      // console.dir(output);
+      // output.innerText = "Hello Text Hellop WOrld";
       // document.write("Hello world Again !!");
       // console.dir(document);
       // console.log(document.URL);
