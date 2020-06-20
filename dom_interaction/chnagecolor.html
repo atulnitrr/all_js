@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change color</title>
+  </head>
+  <body>
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+      <li>item 4</li>
+    </ul>
+
+    <script>
+      const listItems = document.querySelectorAll("li");
+      console.log(listItems);
+      listItems.forEach((item, index) => {
+        item.addEventListener("mouseover", () => {
+          item.style.backgroundColor = "green";
+        });
+
+        item.addEventListener("mouseout", () => {
+          item.style.backgroundColor = "white";
+        });
+      });
+    </script>
+  </body>
+</html>
