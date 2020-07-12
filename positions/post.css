@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 23px;
+}
+
+.container {
+  border: 1px solid green;
+  position: relative;
+}
+
+/* https://css-tricks.com/almanac/properties/p/position/ */
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  height: 56px;
+  /* position: -webkit-sticky; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 2px solid red;
+  z-index: 2px;
+  background-color: #fff;
+}
+
+.header-container > * {
+  padding: 10px 10px;
+}
+
+.left-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-item input {
+  margin-left: 10px;
+  padding: 15px;
+}
+
+main {
+  margin-top: 60px;
+  border: 2px solid green;
+}
+
+section {
+  width: 30%;
+  border: 2px solid red;
+  text-align: center;
+  margin: 0 auto;
+}
