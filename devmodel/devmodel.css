@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+.container {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: minmax(100px, auto) 1fr;
+  min-height: 100vh;
+}
+
+header {
+  display: grid;
+  place-items: center;
+}
+
+header button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.container > * {
+  border: 3px solid green;
+}
+
+.model-wrapper {
+  display: none;
+  border: 2px solid rebeccapurple;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.close-model-btn {
+  font-size: 34px;
+}
+
+.close-model-btn:hover,
+.close-model-btn:focus {
+  font-size: 34px;
+  cursor: pointer;
+}
