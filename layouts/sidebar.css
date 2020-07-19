@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid rebeccapurple;
+  display: grid;
+  grid-template-columns: minmax(150px, 20%) 1fr;
+  min-height: 400px;
+}
+
+.sidebar {
+  background: lightblue;
+}
+
+.content {
+  background: lightcoral;
+  padding: 5px;
+  font-size: 22px;
+}
