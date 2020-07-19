@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid rebeccapurple;
+  min-height: 500px;
+  display: grid;
+  grid-template-rows: minmax(100px, auto) 1fr minmax(100px, auto);
+  text-align: center;
+  font-size: 22px;
+}
+
+header {
+  background: lightblue;
+}
+
+main {
+  background: lightcoral;
+}
+
+footer {
+  background: lightgreen;
+}
