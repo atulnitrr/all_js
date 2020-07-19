@@ -15,4 +15,6 @@
 
 .box {
   background: lightcoral;
+  display: grid;
+  place-items: center;
 }
