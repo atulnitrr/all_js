@@ -29,6 +29,7 @@ header button {
 /* model data */
 .model-wrapper {
   height: 100%;
+  background-color: #eee;
   /* display: none; */
   /* border: 3px solid rebeccapurple; */
 }
@@ -37,7 +38,9 @@ header button {
   height: 100%;
   border: 3px solid rebeccapurple;
   display: grid;
-  grid-template: auto 1fr auto / minmax(200px, auto) 1fr minmax(300px, auto);
+  grid-template:
+    minmax(50px, auto) 1fr minmax(100px, auto) / minmax(200px, auto)
+    1fr minmax(300px, auto);
 }
 
 .form-header {
@@ -66,14 +69,40 @@ header button {
 
 .close-model-btn {
   grid-column: 3/ -1;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.close-model-btn:hover,
+.close-model-btn:focus {
+  cursor: pointer;
 }
 
 .form-content {
   border: 1px solid red;
   grid-row: 2/ 3;
   grid-column: 2/ 3;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 5px 30px 0;
+}
+
+.form-content input {
+  flex: 1 1 0;
+  font-size: 34px;
+  font-weight: bolder;
+}
+
+.form-content textarea {
+  margin-top: 10px;
+  flex: 10 1 0;
+  resize: none;
+}
+
+.form-content > * {
+  padding: 10px;
+  width: 100%;
 }
 
 .form-wrapper section > * {
@@ -84,5 +113,6 @@ header button {
   border: 1px solid seagreen;
   grid-row: 3/ 4;
   grid-column: 2/ 3;
-  padding: 10px 0;
+
+  padding: 5px 30px 0;
 }
