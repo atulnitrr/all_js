@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid gray;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  font-size: 24px;
+}
+
+.section {
+  padding: 2rem;
+  display: grid;
+  /* place-items: center; */
+  text-align: center;
+}
+
+.span12 {
+  background: lightblue;
+  grid-column: 1 / span 12;
+}
+
+.span6 {
+  background: lightcoral;
+  grid-column: 1 / span 6;
+}
+
+.span4 {
+  background: lightgreen;
+  grid-column: 4 / span 4;
+}
+
+.span2 {
+  background: lightblue;
+  grid-column: 2 / span 2;
+}
