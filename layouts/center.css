@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  min-height: 300px;
+  border: 1px solid green;
+  place-items: center;
+}
