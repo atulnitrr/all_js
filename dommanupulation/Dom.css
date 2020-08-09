@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+.container {
+  border: 1px solid rebeccapurple;
+}
+
+.all-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-input-wrapper > * {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.custom-mouse {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
