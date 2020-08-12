@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, serif;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  background: lightblue;
+  display: grid;
+  place-items: center;
+  resize: both;
+  overflow: auto;
+}
+
+.child {
+  border: 1px solid rebeccapurple;
+  padding: 0.5rem;
+  background: lightpink;
+  font-size: 2rem;
+  text-align: center;
+  /* width: 300px; */
+}

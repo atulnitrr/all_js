@@ -1,0 +1,24 @@
+body {
+  font-family: system-ui, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.parent {
+  border: 1px solid seagreen;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  text-align: center;
+  background-color: lightblue;
+  border: 2px solid rebeccapurple;
+  flex: 1 1 300px;
+  padding: 5px;
+}

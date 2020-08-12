@@ -1,0 +1,30 @@
+body {
+  font-family: system-ui, serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.conatiner {
+  border: 2px solid gold;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.conatiner header {
+  border: 1px solid rebeccapurple;
+  padding: 2rem;
+  text-align: center;
+}
+.conatiner main {
+  border: 1px solid rebeccapurple;
+}
+.conatiner footer {
+  border: 1px solid rebeccapurple;
+  padding: 2rem;
+}

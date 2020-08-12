@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, serif;
+  font-size: 24px;
+}
+
+.container {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+.sidebar {
+  background: lightblue;
+  text-align: center;
+  height: 100vh;
+}
+
+.container p {
+  padding: 2rem;
+}
