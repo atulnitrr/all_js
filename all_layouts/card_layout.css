@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 22px;
+}
+
+.wp {
+  border: 1px solid seagreen;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.wp > div {
+  /* border: 2px solid royalblue; */
+  flex: 1 1 25%;
+  padding: 0 8px;
+  margin: 10px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  background-color: #fff;
+}
