@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+
+.container {
+  border: 1px solid red;
+}
+
+.bread_crum {
+  border: 1px solid seagreen;
+}
+
+ul.bread_crum {
+  list-style: none;
+  background-color: #eee;
+  padding: 10px 16px;
+}
+
+ul.bread_crum li {
+  display: inline;
+  font-size: 18px;
+}
+ul.bread_crum li + li::before {
+  content: "/\00a0";
+  padding: 8px;
+  color: black;
+}
+
+ul.bread_crum li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.bread_crum li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
