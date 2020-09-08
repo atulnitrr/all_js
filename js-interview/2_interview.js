@@ -1,12 +1,25 @@
 // How do you make an object iterable in javascript
 
+document.cookie = "name=atul; expire =";
+// function add(a) {
+//   return function (b) {
+//     return a + b;
+//   };
+// }
+
+// const add = (a) => (b) => a + b;
+
+// const data = add(10)(12);
+// console.log(data);
+
 // How do you detect primitive or non primitive value type
-const i = 10;
-console.log(Object(i));
-console.log(Object(i) !== i);
-const person = { name: "Atul" };
-console.log(Object(person));
-console.log(person !== Object(person));
+
+// const i = 10;
+// console.log(Object(i));
+// console.log(Object(i) !== i);
+// const person = { name: "Atul" };
+// console.log(Object(person));
+// console.log(person !== Object(person));
 
 // const obj = {
 //   name: "Atul",

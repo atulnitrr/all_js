@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background: linear-gradient(#000 50%, #fff 0); */
+  font-family: sans-serif;
+  border: 1px solid seagreen;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  border: 2px solid #2196f3;
+  padding: 10px;
+  background: #03a9f4;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tooltip[data-tip]:not([data-tip=""]) {
+  position: relative;
+  --tooltip-color: #fff;
+  --tooltip-bg: rgba(0, 0, 0, 0.9);
+}
+
+.tooltip[data-tip]:not([datat-tip=""]).light {
+  --tooltip-color: rgba(0, 0, 0 . 9);
+  --tooltip-bg: #eee;
+}
+
+.tooltip[data-tip]:not([data-tip=""])::after,
+.tooltip[data-tip]:not([data-tip=""])::before {
+  visibility: hidden;
+}
+
+.tooltip[data-tip]:not([data-tip=""])::before {
+  content: attr(data-tip);
+  background-color: var(--tooltip-bg);
+  color: var(--tooltip-color);
+  padding: 15px;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 12px);
+  width: 250%;
+  max-width: 250px;
+  transform: translate(-50%, 0);
+}
+
+.tooltip[data-tip]:not([data-tip=""])::after {
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: var(--tooltip-bg);
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 50%);
+}
+.tooltip[data-tip]:not([data-tip=""]):hover::after,
+.tooltip[data-tip]:not([data-tip=""]):hover::before {
+  visibility: visible;
+}
+
+q::before {
+  content: "<<";
+  color: #03a9f4;
+}
+
+q::after {
+  content: ">>";
+  color: #0f0;
+}
+
+.tasks-wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+
+.tasks-wrapper li {
+  list-style-type: none;
+  margin: 2px;
+  padding: 0.5rem;
+  background: lightgray;
+  position: relative;
+}
+
+.tasks-wrapper li.done {
+  background: #ccff99;
+}
+
+.tasks-wrapper li.done::after {
+  content: "I am done";
+  position: absolute;
+  border-color: #009933;
+  /* border-style: solid;
+  border-width: 0.3em 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.3em;
+  left: 0.2em;
+  margin-top: -1em;
+  margin-right: 14px;
+  transform: rotate(45deg); */
+  top: 50%;
+  width: 0.5em;
+}
