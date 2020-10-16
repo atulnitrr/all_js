@@ -1,0 +1,21 @@
+.flex-wrapper {
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrapper > div {
+  background-color: green;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+.flex-wrapper > div {
+  flex: 0 0 200px;
+}
+
+/* .flex-wrapper .one {
+  flex-grow: 10;
+} */
